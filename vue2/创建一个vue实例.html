@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01</title>
+</head>
+
+<body>
+  <div class="box">
+    {{ message }} <!-- 对比 -->
+  </div>
+  <div id="box">
+    <!-- 使用双大括号语法绑定数据 -->
+    <h1>{{ message }}</h1>
+  </div>
+
+
+
+  <script src="../资料/vue.js"></script>
+  <script>
+    // 创建一个Vue实例
+    const app = new Vue({
+      el: '#box', // 绑定到页面上的元素
+      data: {
+        message: 'Ciallo, Vue!' // 定义一个数据属性
+      }
+    });
+  </script>
+</body>
+
+</html>

@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>01</title>
+  <style>
+    .box2 {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,6 +25,22 @@
     <!-- 使用双大括号语法绑定数据 -->
     <h1>{{ message }}</h1>
   </div>
+
+  <div class="box2">
+    <button v-on:click="count--">-</button>
+    <h4>{{ count }}</h4>
+    <button @click="count++">+</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
   <script src="../资料/vue.js"></script>
   <script>
     // 创建一个Vue实例
@@ -34,6 +58,12 @@
       data: {
         flag: true,
         unflag: false
+      }
+    });
+    const app2 = new Vue({
+      el: '.box2', // 绑定到页面上的元素
+      data: {
+        count: 0
       }
     });
   </script>

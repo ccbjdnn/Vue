@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v-for</title>
+</head>
+
+<body>
+  <div id="app">
+    <h3>bj店</h3>
+    <ul>
+      <!-- <li v-for="(item, index) in items" :key="index"> -->
+      <li v-for="item in goods">
+        {{ item }}
+      </li>
+    </ul>
+  </div>
+
+  <script src="../资料/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        goods: ['ciallo', '香蕉', '0721']
+      }
+    });
+  </script>
+</body>
+
+</html>

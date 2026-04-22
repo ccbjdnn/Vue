@@ -27,8 +27,9 @@
   </div>
 
   <div class="box2">
+    <button @click="Switch">ciallo</button>
     <button v-on:click="count--">-</button>
-    <h4>{{ count }}</h4>
+    <h4 v-show="flag">{{ count }}</h4>
     <button @click="count++">+</button>
   </div>
 
@@ -63,7 +64,13 @@
     const app2 = new Vue({
       el: '.box2', // 绑定到页面上的元素
       data: {
-        count: 0
+        count: 0,
+        flag: true
+      },
+      methods: {
+        Switch() {
+          this.flag = !this.flag
+        }
       }
     });
   </script>

@@ -1,6 +1,7 @@
 <script setup>
 import { reactive } from 'vue'
 
+// reactive 得是对象
 const state = reactive({
   count: 0
 })

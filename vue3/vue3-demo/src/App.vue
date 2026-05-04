@@ -19,6 +19,7 @@
 </script>
 
 <template>
+  <!-- ref 可以直接使用模板中的变量,不需要.value -->
   <h1>{{ msg }}</h1>
   <button @click="ciallo">+ 1</button>
 </template>

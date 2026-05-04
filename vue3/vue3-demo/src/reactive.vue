@@ -1,0 +1,13 @@
+<script setup>
+import { reactive } from 'vue'
+
+const state = reactive({
+  count: 0
+})
+</script>
+
+<template>
+  <h1>{{ state.count }}</h1>
+  <button @click="state.count++">增加</button>
+  <button @click="state.count--">减少</button>
+</template>

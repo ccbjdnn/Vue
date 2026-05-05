@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'centerComponent'
+})
 import Bottom from '@/components/bottom.vue'
 </script>
 

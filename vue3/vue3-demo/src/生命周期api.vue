@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: '生命周期apiComponent'
+})
 import { onMounted } from 'vue'
 // beforecreate和created生命周期api放在setup中执行
 const getlist = () => {
@@ -20,5 +23,6 @@ onMounted(() => {
 </script>
 
 <template>
-
+  <div>
+  </div>
 </template>

@@ -1,6 +1,10 @@
 <script setup>
 import { inject } from 'vue'
 
+defineOptions({
+  name: 'bottomComponent'
+})
+
 // 跨层接收普通数据
 const themeColor = inject('themeColor')
 console.log(themeColor);

@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'computedComponent'
+})
 import { computed, ref } from 'vue'
 
 const count = ref([0,1,2,3,4,5,6,7,8,9,10])

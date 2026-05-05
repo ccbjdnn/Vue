@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'reactiveComponent'
+})
 import { reactive } from 'vue'
 
 // reactive 得是对象

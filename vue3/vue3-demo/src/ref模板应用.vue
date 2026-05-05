@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'ref-模板应用'
+})
 import { ref, onMounted } from 'vue'
 import TestCom from '@/components/test-com.vue'
 

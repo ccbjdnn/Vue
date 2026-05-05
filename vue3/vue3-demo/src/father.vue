@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'fatherComponent'
+})
 import { ref } from 'vue'
 import SonCom1 from '@/components/son-com-1.vue'
 

@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'watchComponent'
+})
 import { ref, watch } from 'vue'
 
 const count = ref(0)
@@ -13,7 +16,7 @@ watch(count, (newVal, oldVal) => {
 })
 // 监听id变化(数组)
 // newVal===oldVal默认不会深拷贝
-watch(id, (newVal,oldVal) => {
+watch(id, (newVal) => {
   console.log(`数组变化成 ${newVal}`)
 }, {deep: true,immediate: true})
 //deep: true 表示会监听数组的每个元素变化,immediate: true 表示进页面立即执行回调函数

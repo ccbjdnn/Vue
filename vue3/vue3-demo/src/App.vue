@@ -1,6 +1,6 @@
 <!-- 加上setup允许script直接使用组合api -->
 <script setup>
-  import { onBeforeMount, onMounted,ref } from 'vue'
+  import { onBeforeMount,ref } from 'vue'
 
   // 这里可以直接使用组合api
   console.log('setup')

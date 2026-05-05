@@ -1,4 +1,7 @@
 <script setup>
+defineOptions({
+  name: 'topComponent'
+})
 import Center from '@/components/center.vue'
 import { provide, ref } from 'vue'
 

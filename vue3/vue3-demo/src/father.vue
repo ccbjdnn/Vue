@@ -9,6 +9,9 @@ console.log(`----------`);
 const study = () => {
   IQ.value++
 }
+const IQreduce = (val) => {
+  IQ.value -= val
+}
 
 </script>
 
@@ -17,6 +20,10 @@ const study = () => {
    <div class="box">
     <h1>我是父组件,我的IQ是 {{ IQ }}  <button @click="study">学习</button></h1>
     <!-- 添加属性方法传值 -->
-    <SonCom1 money="1000w" :IQ="IQ"></SonCom1>
+    <SonCom1
+    @IQchange="IQreduce"
+    money="1000w" 
+    :IQ="IQ">
+    </SonCom1>
    </div>
 </template>

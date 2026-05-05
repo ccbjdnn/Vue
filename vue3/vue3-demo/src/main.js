@@ -5,7 +5,8 @@ import { createApp } from 'vue'
 // import Watch from '@/watch.vue'
 // import Api from '@/生命周期api.vue'
 // import Father from '@/father.vue'
-import Ref from '@/ref模板应用.vue'
+// import Ref from '@/ref模板应用.vue'
+import Top from '@/Top.vue'
 
 
 
@@ -14,4 +15,5 @@ import Ref from '@/ref模板应用.vue'
 // createApp(Computed).mount('#app')
 // createApp(Watch).mount('#app')
 // createApp(Father).mount('#app')
-createApp(Ref).mount('#app')
+// createApp(Ref).mount('#app')
+createApp(Top).mount('#app')

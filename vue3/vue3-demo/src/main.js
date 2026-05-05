@@ -6,7 +6,8 @@ import { createApp } from 'vue'
 // import Api from '@/生命周期api.vue'
 // import Father from '@/father.vue'
 // import Ref from '@/ref模板应用.vue'
-import Top from '@/Top.vue'
+// import Top from '@/Top.vue'
+import DefineModel from '@/defineModel.vue'
 
 
 
@@ -16,4 +17,5 @@ import Top from '@/Top.vue'
 // createApp(Watch).mount('#app')
 // createApp(Father).mount('#app')
 // createApp(Ref).mount('#app')
-createApp(Top).mount('#app')
+// createApp(Top).mount('#app')
+createApp(DefineModel).mount('#app')

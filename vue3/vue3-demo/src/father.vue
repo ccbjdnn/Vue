@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import SonCom1 from '@/components/son-com-1.vue'
+
 const IQ = ref(250)
 console.log(IQ);
 console.log(IQ.value);
@@ -21,9 +22,9 @@ const IQreduce = (val) => {
     <h1>我是父组件,我的IQ是 {{ IQ }}  <button @click="study">学习</button></h1>
     <!-- 添加属性方法传值 -->
     <SonCom1
-    @IQchange="IQreduce"
+    @play="IQreduce"
     money="1000w" 
-    :IQ="IQ">
+    :sendIQ="IQ">
     </SonCom1>
    </div>
 </template>

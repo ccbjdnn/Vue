@@ -2,21 +2,21 @@
 // 编译器宏接收
 const inherit = defineProps({
   money: String,
-  IQ: Number
+  sendIQ: Number
 })
 console.log(inherit)
 console.log(inherit.money)
-console.log(inherit.IQ)
+console.log(inherit.sendIQ)
 
 const emit = defineEmits(['play'])
-const play = () => {
-  emit('IQchange', 2.5)
+const dejected = () => {
+  emit('play', 2.5)
 }
 </script>
 
 <template>
-  <div class="son"><h2>我是子组件1,我有 {{ inherit.money }} 元,我的IQ是 {{ inherit.IQ }}</h2>
-    <button @click="play">颓废</button>
+  <div class="son"><h2>我是子组件1,我有 {{ inherit.money }} 元,我的IQ是 {{ inherit.sendIQ }}</h2>
+    <button @click="dejected">颓废</button>
   </div>
 </template>
 

@@ -19,4 +19,6 @@ export const useCounterStore = defineStore('counter',()=>{
     decrement,
     doubleCount
   }
+},{
+  persist: true // 开启持久化
 })

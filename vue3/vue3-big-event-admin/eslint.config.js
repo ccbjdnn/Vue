@@ -17,6 +17,9 @@ export default defineConfig([
     languageOptions: {
       globals: {
         ...globals.browser,
+        ElMessage: 'readonly',
+        ElMessageBox: 'readonly',
+        ElLoading: 'readonly'
       },
     },
   },
@@ -41,5 +44,5 @@ export default defineConfig([
   'no-undef': 'error',
   'semi': ['error', 'never']
 }
-  }
+  },
 ])
